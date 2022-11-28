@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main
+{
+    width: 100%;
+}
+
+
+#main #section1
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(46, 45, 45);
+}
+#main #section1 #nav
+{
+    width: 100%;
+    height: 13vh;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+}
+#main #section1 #nav #left
+{
+    width: 7%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main #section1 #nav #left img
+{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+    height: 95%;
+}
+#main #section1 #nav #left img:hover
+{
+    transform: scale(.9);
+}
+#main #section1 #nav #right
+{
+    width: 45%;
+    height: 100%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+#main #section1 #nav #right a
+{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+    color: #5e5e5e;
+}
+#main #section1 #nav #right a:nth-child(1):hover
+{
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    color: white;
+}
+#main #section1 #nav #right a:nth-child(2):hover
+{
+    border-bottom: 3px solid black;
+    color: white;
+    padding-bottom: 5px;
+}
+#main #section1 #nav #right a:nth-child(3):hover
+{
+    border-bottom: 3px solid black;
+    color: white;
+    padding-bottom: 5px;
+}
+#main #section1 #nav #right a:nth-child(4):hover
+{
+    border-bottom: 3px solid black;
+    color: white;
+    padding-bottom: 5px;
+}
+#main #section1 #nav #right a:nth-child(5)
+{
+    position: relative;
+    width: 10vw;
+    height: 3vw;
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#main #section1 #nav #right a:nth-child(5) p
+{
+    z-index: 999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+}
+#main #section1 #nav #right a:nth-child(5) #box
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(74, 70, 70);
+    position: absolute;
+    transition: left 0.6s ease;
+    left: -100%;
+}
+#main #section1 #nav #right a:nth-child(5):hover #box
+{
+    left: 0;
+}
+#main #section1 #nav #right a:nth-child(5):hover p
+{
+    color: white;
+}
+#main #section1 #content
+{
+    width: 100%;
+    height: 87vh;
+    /* background-color: yellow; */
+    display: flex;
+}
+#main #section1 #content #left
+{
+    width: 60%;
+    height: 100%;
+    /* background-color: palegoldenrod; */
+    padding-left: 6vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 2.5vw;
+    justify-content: center;
+}
+#main #section1 #content #left h3
+{
+    font-family: 'Nerko One', cursive;
+    font-size: 3vw;
+    font-weight: 100;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+    text-shadow: 0px 0px 2px white;
+    width: fit-content;
+}
+#main #section1 #content #left h3:hover
+{
+    text-shadow: 0px 0px 10px black;
+    color: rgb(88, 85, 85);
+}
+#main #section1 #content #left h1
+{
+    font-size: 6vw;
+    font-family: 'Kosugi Maru', sans-serif;
+    margin-left: -17px;
+}
+#main #section1 #content #left h1 span
+{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(39, 94, 66);
+}
+#main #section1 #content #left h5
+{
+    font-size: 1.1vw;
+    color: rgb(8, 97, 8);
+}
+#main #section1 #content #left p
+{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(107, 107, 107);
+}
+#main #section1 #content #left a
+{
+    color: white;
+    background-color: rgb(231, 60, 60);
+    text-decoration: none;
+    width: 11vw;
+    height: 3vw;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+    box-shadow: 0px 0px 15px black;
+}
+#main #section1 #content #left a:hover
+{
+    box-shadow: 0px 0px 10px white;
+    color: black;
+}
+#main #section1 #content #right
+{
+    width: 40%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#main #section1 #content #right #img1
+{
+    height: 70%;
+    position: absolute;
+    opacity: .5;
+}
+#main #section1 #content #right #img2
+{
+    position: absolute;
+    height: 90%;
+    left: 50%;
+    top: 55%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    transform: translate(-50%,-50%);
+}
+#main #section1 #content #right #img2:hover
+{
+    left: 47%;
+}
+
+
+
+/* ------------------------------------------section 2-------------------------------------------- */
+
+#section2
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    justify-content: flex-end;
+}
+#section2 #left
+{
+    height: 100%;
+    width: 30%;
+    /* background-color: yellow; */
+    background-size: cover;
+    background-position: center;
+    background-image: url(./photo.jpg);
+}
+#section2 #right
+{
+    height: 100%;
+    width: 65%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1.7vw;
+    padding-left: 6vw;
+    justify-content: center;
+}
+#section2 #right h1
+{
+    font-size: 7vw;
+    text-shadow: 0px 0px 5px white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+#section2 #right h1:hover
+{
+    text-shadow: 0px 0px 10px black;
+    color: rgb(88, 85, 85);
+}
+#section2 #right h5
+{
+    font-family: 'Nerko One', cursive;
+    text-shadow: 0px 0px 1px white;
+    font-size: 2.3vw;
+    font-weight: 100;
+}
+#section2 #right h5 span
+{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(39, 94, 66);   
+}
+#section2 #right p
+{
+    color: rgb(107, 107, 107);
+    font-family: 'Quicksand', sans-serif;
+}
+#section2 #right a
+{
+    color: white;
+    background-color: rgb(231, 60, 60);
+    text-decoration: none;
+    width: 11vw;
+    height: 3vw;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+    box-shadow: 0px 0px 15px black;
+}
+#section2 #right a:hover
+{
+    box-shadow: 0px 0px 10px white;
+    color: black;
+}
+
+
+/* ------------------------------------------section 3-------------------------------------------- */
+
+#section3
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(46, 45, 45);
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: space-evenly;
+}
+#section3 h1
+{
+    font-size: 5vw;
+    text-shadow: 0px 0px 5px white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+#section3 h1 span
+{
+    color: rgb(39, 94, 66);
+    text-shadow: 0px 0px 2px white;
+}
+#section3 h1:hover
+{
+    text-shadow: 0px 0px 10px black;
+    color: rgb(88, 85, 85);
+}
+
+
+
+
+
+
+.skills_main{
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px; */
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    color: white;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    /* padding:  0 10px; */
+}
+.skill_bar .bar{
+    width: 50%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(39, 94, 66);
+    box-shadow: 0px 0px 5px white;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .js{
+    width: 60%;
+    animation: js 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+.skill_bar .bar .C{
+    width: 90%;
+    animation: c 2s;
+}
+@keyframes c {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .Cpp{
+    width: 80%;
+    animation: Cpp 2s;
+}
+@keyframes Cpp {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .DSA{
+    width: 70%;
+    animation: DSA 2s;
+}
+@keyframes DSA {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .java{
+    width: 60%;
+    animation: java 2s;
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+
+
+
+
+/* ------------------------------------------section 4-------------------------------------------- */
+
+#section4
+{
+    width: 100%;
+    height: 130vh;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0 5vw;
+    gap: 3vw;
+}
+#section4 h1
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3vw;
+    color: rgb(117, 116, 116);
+}
+#section4 h1 #one
+{
+    font-size: 3vw;
+    color: rgb(231, 60, 60);
+}
+#section4 h1 span
+{
+    font-size: 2vw;
+}
+#section4 #box
+{
+    width: 99%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.49);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+
+
+#section4 #box .squarecontainer
+{
+    width: 100%;
+    height: calc(100%/3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: yellow; */
+}
+#section4 #box .square
+{
+    width: 20.5vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section4 #box .square video
+{
+    width: 100%;
+    height: 100%;
+}
+#section4 #box .square img{
+    width: 120%;
+    height: 90%;
+}
+
+
+
+
+/* ------------------------------------------section 5-------------------------------------------- */
+
+#section5
+{
+    width: 100%;
+    background-color: rgb(46, 45, 45);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section5 h1
+{
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 8vw;
+    text-shadow: 0px 0px 5px white;
+}
+#section5 h1 a
+{
+    text-decoration: none;
+}
+#section5 h1 a:hover
+{
+    text-decoration: line-through;
+}
+#section5 h1 #one
+{
+    color: blue;
+}
+#section5 h1 #two
+{
+    color: red;
+}
+#section5 h1 #three
+{
+    color: rgb(52, 75, 139);
+}
+
+
+/* --------------------------------------------last section-------------------------- */
+
+#section7
+{
+    width: 100%;
+    height: 10vw;
+    background-color: rgb(231, 60, 60);
+}
+#section7 #s7up
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 38vw;
+}
+#section7 #s7up .icon
+{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2.5vw;
+}
+#a1
+{
+    animation: controv 2s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite both;
+}
+#a2
+{
+    animation: contro 2s cubic-bezier(0.19, 1, 0.22, 1)  infinite both;
+}
+#a3
+{
+    animation: controv 2s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite both;
+}
+
+#section7 #s7down
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+}
+@keyframes contro
+{
+    from
+    {
+        opacity: 0;
+        height: 0%;
+        width: 0%;
+    }
+    to
+    {
+        width: 5vw;
+        height: 5vw;
+        opacity: 1;
+    }
+}
+@keyframes controv
+{
+    from
+    {
+        opacity: 0;
+        height: 0%;
+    }
+    to
+    {
+        height: 5vw;
+        opacity: 1;
+    }
+}
